@@ -6,3 +6,15 @@
 [1, 5, 2, 3, 4, 6, 1, 7] => [1, 7]
 [1, 5, 2, 3, 4, 1, 7] => [1, 5]
 '''
+
+number = [1, 5, 2, 3, 4, 6, 1, 7]
+
+def get_up2(a):
+    count = [a[0]]
+    for i in a:
+        if i > max(count):
+            count.append(i)
+    return count
+    
+print(get_up2(number))
+
